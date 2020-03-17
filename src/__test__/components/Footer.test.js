@@ -18,6 +18,7 @@ describe('<Footer />', () => {
 describe('Footer Snapshot', () => {
   test('Comprobar la UI del componente Footer', () => {
     const footer = create(<Footer />);
-    expect(footer.toJSON()).toMatchSnapshot();
+    expect(footer.toJSON())
+      .toMatchSnapshot();
   });
 });

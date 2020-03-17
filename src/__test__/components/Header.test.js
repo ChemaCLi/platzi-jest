@@ -24,7 +24,7 @@ describe('<Header />', () => {
   });
 });
 
-describe('Header SnapShot', () => {
+describe('Header Snapshot', () => {
   test('Comprobar el Snapshot de Header', () => {
     const header = create(
       <ProviderMock>
