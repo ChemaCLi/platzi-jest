@@ -4,7 +4,7 @@ import ProviderMock from '../../__mocks__/ProviderMock';
 import ProductMock from '../../__mocks__/ProductMock';
 import Product from '../../components/Product';
 
-describe('<Product/>', () => {
+describe('<Product />', () => {
   test('Render del componente Product', () => {
     const product = shallow(
       <ProviderMock>
@@ -13,14 +13,14 @@ describe('<Product/>', () => {
     );
     expect(product.length).toEqual(1);
   });
-  test('Comprobar el boton de comprar', () => {
+
+  test('Comprobar el boón de comprar', () => {
     const handleAddToCart = jest.fn();
     const wrapper = mount(
       <ProviderMock>
         <Product
           product={ProductMock}
-          handleAddToCart={handleAddToCart}
-        />
+          handleAddToCart={handleAddToCart} />
       </ProviderMock>,
     );
     wrapper.find('button').simulate('click');
